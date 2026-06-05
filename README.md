@@ -12,6 +12,7 @@ Owner: Angella Barrett · Phone: 345-329-0984 · Email: barrettangella@yahoo.com
 JUST MY FIT/
 ├── index.html              # Home page
 ├── products.html           # Services / Products page
+├── gallery.html            # Gallery / Lookbook (with lightbox)
 ├── faq.html                # FAQ page
 ├── css/
 │   └── styles.css          # All styling (one shared stylesheet)
@@ -80,6 +81,19 @@ The fashion images are **placeholders** loaded from Unsplash (royalty-free). To 
 1. Drop your photos into the `assets/` folder (e.g. `assets/ladies-1.jpg`).
 2. In the HTML, replace the image URL `https://images.unsplash.com/...` with your file path, e.g. `assets/ladies-1.jpg`.
 3. Keep the `alt="..."` text descriptive — it helps SEO and accessibility.
+
+### Adding more photos to the Gallery
+The **Gallery page** (`gallery.html`) showcases store photos and links to Instagram
+([@just.my.fit](https://www.instagram.com/just.my.fit/)). To add a new photo:
+
+1. Drop the image into `assets/` (use a simple lowercase name with no spaces, e.g. `gallery-new-dress.jpeg`).
+2. In `gallery.html`, copy one existing `<button class="g-item" ...>` block and update:
+   - `data-full` and the `<img src>` → your new file path
+   - `data-title` / `data-sub` and the `<img alt>` / `.g-overlay` text → a short description
+3. The lightbox (click-to-zoom) and responsive grid pick it up automatically.
+
+Note: Instagram photos can't be pulled in automatically, so the gallery uses photos
+saved into `assets/`. Refresh it whenever new styles come in.
 
 ### Adding the real social media links
 Social icons currently link to `#` (placeholder). When the accounts are live, replace each `href="#"` with the real profile URLs (Facebook, Instagram, WhatsApp) in the footer and the Home page "Stay Connected" section.
