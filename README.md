@@ -119,6 +119,24 @@ node build-favicons.js
 
 ---
 
+## Performance & SEO
+
+- **Images** are optimized for fast mobile loading: full photos are capped at 1100px
+  (used in the lightbox) and the grid loads 640px thumbnails from `assets/thumb/`
+  (the grid payload dropped ~82%). After adding new gallery photos, re-run:
+  ```
+  npm install
+  node build-image-optim.js
+  ```
+- **SEO** per page: unique titles + ~150-char meta descriptions, Open Graph + Twitter
+  cards, `robots` and `geo` meta, canonical URLs, and structured data —
+  `ClothingStore` (home), `BreadcrumbList` (inner pages), `ItemList` (products),
+  `ImageGallery` (gallery) and `FAQPage` (FAQ). Sitemap + robots.txt included.
+- When the real domain is set, the find-and-replace for `justmyfitclothing.ky`
+  (see above) also updates all the SEO/structured-data URLs.
+
+---
+
 ## Brand & design notes
 
 - **Colors:** deep charcoal/black base, with pink + purple from the logo as accents and royal blue as a secondary accent, on soft neutral backgrounds for readability.
