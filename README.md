@@ -51,20 +51,20 @@ Just double-click `index.html` to open it in any web browser. All pages link tog
 The client does not yet have a domain. The site currently uses the placeholder:
 
 ```
-justmyfitclothing.ky
+justmyfit.ky
 ```
 
 ### Step 1 — Register the domain
-`.ky` domains are managed through the Cayman Islands registry. A local provider (e.g. a Cayman web/IT company) can register `justmyfitclothing.ky` or a similar name. A `.com` can also be used if preferred.
+`.ky` domains are managed through the Cayman Islands registry. A local provider (e.g. a Cayman web/IT company) can register `justmyfit.ky` or a similar name. A `.com` can also be used if preferred.
 
 ### Step 2 — Update the placeholder domain in the code
-Once the real domain is known, find-and-replace `justmyfitclothing.ky` across the project. It appears in:
+Once the real domain is known, find-and-replace `justmyfit.ky` across the project. It appears in:
 
 - `index.html`, `products.html`, `faq.html` → the `<link rel="canonical">` tags, the Open Graph (`og:url`, `og:image`) tags, the footer line, and the structured-data (`application/ld+json`) blocks.
 - `robots.txt` → the `Sitemap:` line.
 - `sitemap.xml` → every `<loc>` URL.
 
-A simple Find & Replace All (`justmyfitclothing.ky` → `yournewdomain.ky`) in a code editor updates everything at once.
+A simple Find & Replace All (`justmyfit.ky` → `yournewdomain.ky`) in a code editor updates everything at once.
 
 ### Step 3 — Point the domain at the host
 Set the domain's DNS to your chosen host (the host provides the records). Then enable HTTPS/SSL (free with Netlify, Cloudflare Pages, and most hosts).
@@ -132,7 +132,7 @@ node build-favicons.js
   cards, `robots` and `geo` meta, canonical URLs, and structured data —
   `ClothingStore` (home), `BreadcrumbList` (inner pages), `ItemList` (products),
   `ImageGallery` (gallery) and `FAQPage` (FAQ). Sitemap + robots.txt included.
-- When the real domain is set, the find-and-replace for `justmyfitclothing.ky`
+- When the real domain is set, the find-and-replace for `justmyfit.ky`
   (see above) also updates all the SEO/structured-data URLs.
 
 ---

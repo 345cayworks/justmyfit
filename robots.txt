@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://justmyfitclothing.ky/sitemap.xml
+Sitemap: https://justmyfit.ky/sitemap.xml
