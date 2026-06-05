@@ -1,0 +1,24 @@
+{
+  "name": "just-my-fit",
+  "version": "1.0.0",
+  "description": "A modern, minimal, mobile-friendly website for **Just My Fit Clothing Store**, George Town, Cayman Islands.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/345cayworks/justmyfit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/345cayworks/justmyfit/issues"
+  },
+  "homepage": "https://github.com/345cayworks/justmyfit#readme",
+  "dependencies": {
+    "sharp": "^0.34.5"
+  }
+}

@@ -89,6 +89,22 @@ The Home page embeds a Google Map centered on George Town. To pin the exact stor
 
 ---
 
+## Favicons (browser tab icon)
+
+The favicon was generated from the store logo (cropped to the figure so it stays
+clear at small sizes). Files live in the project: `favicon.ico` (root) plus
+`assets/favicon-16x16.png`, `favicon-32x32.png`, `favicon-48x48.png`,
+`apple-touch-icon.png`, `icon-192.png`, and `icon-512.png`.
+
+To regenerate them (e.g. after changing the logo):
+
+```
+npm install
+node build-favicons.js
+```
+
+---
+
 ## Brand & design notes
 
 - **Colors:** deep charcoal/black base, with pink + purple from the logo as accents and royal blue as a secondary accent, on soft neutral backgrounds for readability.
