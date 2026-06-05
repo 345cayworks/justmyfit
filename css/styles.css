@@ -836,6 +836,35 @@ p { margin: 0 0 1rem; }
 }
 .ig-handle svg { width: 22px; height: 22px; fill: var(--purple); }
 
+.gallery-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.filter-btn {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: 1.5px solid var(--neutral-line);
+  background: var(--neutral-card);
+  color: var(--text-soft);
+  cursor: pointer;
+  transition: all 0.25s var(--ease);
+}
+.filter-btn:hover { border-color: var(--purple); color: var(--purple); }
+.filter-btn.active {
+  background: var(--grad-brand-soft);
+  border-color: transparent;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(125, 44, 152, 0.28);
+}
+.gallery .g-item.is-hidden { display: none; }
+.gallery-empty { text-align: center; color: var(--text-muted); padding: 30px 0; }
+
 .gallery {
   column-count: 3;
   column-gap: 20px;
